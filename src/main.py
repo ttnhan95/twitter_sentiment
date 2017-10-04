@@ -86,7 +86,7 @@ joblib.dump(clf3, '../model/classifier/svmmodel.pkl')
 eclf = eclf.fit(X_train,y_train)
 joblib.dump(eclf, '../model/classifier/votingmodel.pkl') 
 
-Train classifier and test
+# Train classifier and test
 print "Twitter 2013 test result: "
 train_classifier.train_classifier(clf1, X_test_2013, y_test_2013)
 train_classifier.train_classifier(clf2, X_test_2013, y_test_2013)
